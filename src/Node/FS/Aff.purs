@@ -224,6 +224,12 @@ appendTextFile :: Encoding -> FilePath -> String -> Aff Unit
 appendTextFile = toAff3 A.appendTextFile
 
 -- |
+-- | Appends the contents of a buffer to a file.
+-- |
+copyFile :: FilePath -> FilePath -> Aff Unit
+copyFile = toAff2 A.copyFile
+
+-- |
 -- | Check to see if a file exists.
 -- |
 exists :: String -> Aff Boolean
