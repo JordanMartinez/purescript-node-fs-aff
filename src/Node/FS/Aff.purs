@@ -22,6 +22,7 @@ module Node.FS.Aff
   , writeTextFile
   , appendFile
   , appendTextFile
+  , copyFile
   , exists
   , fdOpen
   , fdRead
